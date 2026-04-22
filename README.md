@@ -17,7 +17,7 @@
   col("estimated_revenue") = col("price_usd")*col("owners_mid")  
 I then save the cleaned dataset as "hdfs://nyu-dataproc-m/user/jw8191_nyu_edu/steamspy_cleaned"
 * Run [FirstCode.scala](./profiling_code/FirstCode.scala) to explore the mean, mediam, std, min, max value and the mode of the numerical columns in the cleaned dataset, then create a binary column col("is_top_rated") for col("rating")>0.8 to explore the genral public reputation of the games in the dataset. (The uploaded code also include my teammate's part exploring her dataset.)
-* Run [FinalCode.scala](./ana_code/FinalCode.scala) to find out the result. We created a new binary column col("is_high_female_engagement") based on (Number of Active Game Players / Number of AO3 Works per Game), then compare it against col("is_top_rated") to have col("rating_engagement_combo") that devides all games into four combinations:  
+* Run [FinalCode.scala](./ana_code/FinalCode.scala) to find out the result. We created a new binary column col("is_high_female_engagement") based on Number of Active Game Players / Number of AO3 Works per Game ([here](https://github.com/JingjingWang129/Steam-AO3-Big-Data-Analytics/blob/ba408196735e3e9358cc4abc643fb48eff21cde6/ana_code/FinalCode.scala#L85-L121)), then compare it with col("is_top_rated") to have col("rating_engagement_combo") that devides all games into four combinations:  
   11 (high steam rating + high female reputation)  
   10 (high steam rating + low female reputation)  
   01 (low steam rating + high female reputation)  
@@ -28,7 +28,7 @@ Save the final dataset as "hdfs://nyu-dataproc-m/user/jw8191_nyu_edu/final_joine
 
 ## Explanation of the Execution Result Screenshots
 * Running result of CountRecs.scala: [pic1](screenshots/result_of_CountRecs_and_Clean/image001.png)
-  [pic12](screenshots/result_of_CountRecs_and_Clean/image002.png)
+  [pic2](screenshots/result_of_CountRecs_and_Clean/image002.png)
 * Running result of Clean.scala: [pic3](screenshots/result_of_CountRecs_and_Clean/image003.png)
   [pic4](screenshots/result_of_CountRecs_and_Clean/image004.png)
   [pic5](screenshots/result_of_CountRecs_and_Clean/image005.png)

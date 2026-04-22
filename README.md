@@ -27,7 +27,7 @@ Save the final dataset as "hdfs://nyu-dataproc-m/user/jw8191_nyu_edu/final_joine
 * Note: Some games are free-to-play, which means their price on steam is 0 and cannot be used to calculate the estimated revenue. We do not cover the analysis about free-to-play games in the project because we are not able for find their revenue using the existing datasets, if there's a further exploration, we might retrieve the revenue data from the financial statements of the developers of free-to-play games.
 
 ## Explanation of the Execution Result Screenshots
-* Running result of CountRecs.scala: [pic1](.screenshots/.result_of_CountRecs_and_Clean/image001.png)
+* Running result of CountRecs.scala: [pic1](screenshots/result_of_CountRecs_and_Clean/image001.png)
   [pic12](.screenshots/result_of_CountRecs_and_Clean/image002.png)
 * Running result of Clean.scala: [pic3](.screenshots/result_of_CountRecs_and_Clean/image003.png)
   [pic4](.screenshots/result_of_CountRecs_and_Clean/image004.png)
